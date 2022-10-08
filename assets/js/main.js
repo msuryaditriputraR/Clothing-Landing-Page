@@ -54,7 +54,13 @@ function scrollActive() {
 window.addEventListener("scroll", scrollActive);
 
 /*=============== SHOW SCROLL UP ===============*/
+function scrollUp() {
+    const scrollUp = document.getElementById("scroll-up");
 
+    scrollUp.classList[this.scrollY >= 200 ? "add" : "remove"]("show-scroll");
+}
+
+window.addEventListener("scroll", scrollUp);
 /*=============== DARK LIGHT THEME ===============*/
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
